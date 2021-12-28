@@ -4,7 +4,7 @@ from sys import path
 
 from selenium.webdriver.common.by import By
 
-path.append('..')
+path.append('..') # adding it to make posssible run script without PyCharm e.g. from cmd
 
 from pages.BasePage import BasePage
 
