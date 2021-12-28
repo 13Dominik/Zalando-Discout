@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from sys import path
 
-path.append('..')
+path.append('..') # adding it to make posssible run script without PyCharm e.g. from cmd
 
 from pages.BasePage import BasePage
 
