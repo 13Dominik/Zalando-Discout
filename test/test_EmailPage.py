@@ -1,7 +1,7 @@
 import unittest
 from sys import path
 
-path.append('..')
+path.append('..')  # adding it to make posssible run tests without PyCharm e.g. from cmd
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
