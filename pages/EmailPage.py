@@ -23,3 +23,11 @@ class EmailPage(BasePage):
         self.do_click(self.NEW_EMAIL_LABEL)
         email = pc.paste()
         return email
+
+    def wait_for_email_to_confirm(self, max_wait: int) -> bool:
+        """
+        Function that wait for email
+        :param max_wait: max waiting time [s]
+        :return: True if email arrived, False if not
+        """
+        pass

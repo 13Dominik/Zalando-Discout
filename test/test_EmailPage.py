@@ -16,7 +16,7 @@ class TestEmailPage(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
         self.email_page = EmailPage(self.driver)
-        self.email_page.driver.get("https://10minutemail.net/?lang=pl")
+        self.email_page.driver.get(self.email_page.PAGE_URL)
 
     def test_corect_loading_page(self):
         self.assertEqual("10-minutowy Mail", self.email_page.get_title("10-minutowy Mail"))  # check if title is correct
