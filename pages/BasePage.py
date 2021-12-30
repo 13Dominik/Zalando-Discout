@@ -22,8 +22,8 @@ class BasePage:
         return element.text
 
     def get_title(self, title) -> str:
-        """ Return title of page """
-        WebDriverWait(self.driver, self.MAX_WAIT).until(EC.title_is(title))
+        """ Check if title (arg) is equal to site title, and then returns site title """
+        WebDriverWait(self.driver, self.MAX_WAIT).until(EC.title_is(title)) # wait to load and check if title correct
         return self.driver.title
 
     def do_click(self, by_locator) -> None:
